@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "derek",
-    "password": "derek",
-    "database": "blogify_db",
-    "host": "127.0.0.1",
+    "username": "avsnycdy",
+    "password": "PMQLqBSFVoHZTLwSUcxapL0RZEjyYiXu",
+    "database": "avsnycdy",
+    "host": "tantor.db.elephantsql.com",
     "dialect": "postgres"
   }
 }
