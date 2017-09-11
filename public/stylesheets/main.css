@@ -1,0 +1,258 @@
+/* line 3, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+.spacing {
+  margin-top: 40px;
+}
+
+
+/* line 7, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+.page-title {
+  margin-top: 0 !important;
+  margin-bottom: 35px !important;
+}
+
+
+/* line 12, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* line 15, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body .container {
+  max-width: 968px;
+}
+
+
+/* line 21, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body .navbar {
+  margin-bottom: 0;
+}
+
+
+/* line 26, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body .social li {
+  padding-top: 8px;
+  color: #fff;
+}
+
+
+/* line 30, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body .social li a {
+  color: #fff !important;
+  background-color: #5bc0de;
+}
+
+
+/* line 35, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body .social li a.btn-instagram:hover {
+  background-color: #31b0d5;
+}
+
+
+/* line 42, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .hero-image {
+  background: url("../images/hero.jpg") no-repeat;
+  height: 540px;
+  min-width: 100%;
+  margin-bottom: 0;
+  font-family: monospace;
+}
+
+
+/* line 49, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .hero-image h1 {
+  padding-left: 700px;
+  padding-top: 320px;
+  color: #fff;
+}
+
+
+/* line 55, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .hero-image p {
+  padding-left: 700px;
+  color: #fff;
+  font-size: 25px;
+}
+
+
+/* line 62, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .sub-hero {
+  padding: 45px 0;
+  margin: 0;
+}
+
+
+/* line 67, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .topic-boxes {
+  padding: 0;
+}
+
+
+/* line 70, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .topic-boxes .thumbnail {
+  padding: 0;
+  border-radius: 0;
+}
+
+
+/* line 74, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .topic-boxes .thumbnail img {
+  margin: 0;
+  min-width: 100%;
+}
+
+
+/* line 81, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .row.spacing {
+  margin-top: 40px;
+}
+
+
+/* line 85, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .row.spacing .featured p {
+  padding: 60px;
+  background-color: #e6e6e6;
+}
+
+
+/* line 93, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .post .post-description {
+  padding: 20px 0 0;
+}
+
+
+/* line 97, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #main .post .read-more {
+  padding: 5px 35px;
+}
+
+
+/* line 104, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #about p {
+  padding-bottom: 15px;
+}
+
+
+/* line 108, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body #about a {
+  color: #5bc0de;
+  text-decoration: underline;
+}
+
+
+/* line 114, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer {
+  background-color: #696969;
+  display: block;
+  margin-top: 40px;
+}
+
+
+/* line 119, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .row {
+  padding: 30px 0;
+}
+
+
+/* line 122, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .row .bio-description {
+  color: #fff;
+}
+
+
+/* line 125, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .row .bio-description h2 {
+  margin-top: 5px;
+}
+
+
+/* line 129, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .row .bio-description a {
+  color: #5bc0de;
+  text-decoration: underline;
+}
+
+
+/* line 135, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .row .bio-contact {
+  color: #fff;
+}
+
+
+/* line 138, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .row .bio-contact h2 {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+/* line 143, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .row .bio-contact button {
+  width: 100%;
+}
+
+
+/* line 150, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .copyright p {
+  color: #fff;
+}
+
+
+/* line 154, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body footer .copyright p>a {
+  color: #5bc0de;
+  text-decoration: underline;
+}
+
+
+/* line 161, /var/www/html/2017SummerJavaScript/week_5/projects/shelbs/scss/main.scss */
+
+body .not-found {
+  margin: 40px 0 0;
+}
+
+form.added-padding {
+  margin-top: 40px;
+}
+
+#main {
+  min-height: 241px;
+}
+
+.login .container {
+  padding-top: 60px;
+}
+
+
+/*# sourceMappingURL=../css/main.map */

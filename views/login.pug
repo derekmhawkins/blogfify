@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+  #main.login
+    .row.spacing.post
+      .container
+        .col-xs-12.col-md-12
+          form(action='/login' method='post').form-horizontal.login
+            .form-group
+              label.col-sm-2.control-label(for='inputUsername') Username
+              .col-sm-10
+                input#inputUsername.form-control(type='text', placeholder='Username', name='username')
+            .form-group
+              label.col-sm-2.control-label(for='inputPassword') Password
+              .col-sm-10
+                input#inputPassword.form-control(type='password', placeholder='Password' name='password')
+            .form-group
+              .col-sm-offset-2.col-sm-10
+                button.btn.btn-default(type='submit') Sign In

@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  #main
+    .row.spacing.post
+      .container
+        .col-xs-12.col-md-12
+          form.added-padding(action='/lifestyle', method='post', enctype='multipart/form-data')
+            .form-group
+              input.form-control(name='title', type='text', placeholder="Insert title here...")
+            .form-group
+              label File input
+              input(name='image', type='file')
+            .form-group
+              textarea.form-control(name='body', rows='3')
+            button.btn.btn-default(type='submit') Submit

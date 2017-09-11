@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  #main
+    .row.spacing.post
+      .container
+        .col-xs-12.col-md-12
+          form.added-padding(action='/lifestyle/' + post.id + '?_method=PUT', method='post')
+            .form-group
+              input.form-control(name='title', type='text', value=post.title)
+            .form-group
+              textarea.form-control(name='body', rows='3')= post.body
+            button.btn.btn-default(type='submit') Submit

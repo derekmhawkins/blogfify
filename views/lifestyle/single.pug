@@ -1,0 +1,17 @@
+extends ../layout.pug
+
+block content
+  #main
+    .row.spacing.post
+      .container
+        .col-xs-12.col-md-12
+          h2.page-title Lifestyle
+            form(action='/lifestyle/' + post.id + '?_method=DELETE', method='post')
+              .btn-group.pull-right(role='group')
+                a.btn.btn-warning(href='/lifestyle/' + post.id + '/edit') Edit
+                button.btn.btn-danger(type='submit') Delete
+          h3.post-title #{post.title}
+          h6.post-date #{post.createdAt.toDateString()}
+          img.img.img-responsive.post-image(src='../../uploads/' + post.image)
+          p.post-description
+            | #{post.body}

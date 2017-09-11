@@ -1,0 +1,43 @@
+header
+  nav.navbar.navbar-default
+    .container-fluid
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.visible-xs.navbar-brand(href='/') Shelby Cherie
+      // Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href='/')
+              | Home 
+              span.sr-only (current)
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              | Blog 
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='/career') Career
+              li
+                a(href='/lifestyle') Lifestyle
+              li
+                a(href='/travel') Travel
+        if currentUser
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/profile') Profile
+            li.active
+              a(href='/signout') Log Out
+        else
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='/login') Log In
+            li
+              a(href='/register') Register
+      // /.navbar-collapse
+    // /.container-fluid

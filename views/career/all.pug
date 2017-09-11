@@ -1,0 +1,16 @@
+extends ../layout.pug
+
+block content
+  #main
+    .row.spacing.post
+      .container
+        .col-xs-12.col-md-12
+          h2.page-title Career
+          a.btn.btn-info.pull-right(href='/career/new') New Post
+          for post in posts
+            h3.post-title #{post.title}
+            h6.post-date #{post.createdAt.toDateString()}
+            img.img.img-responsive.post-image(src='../../uploads/' + post.image)
+            p.post-description
+              | #{post.body}
+            a.btn.btn-sm.btn-info.read-more(href='/career/' + post.id, role='button') Read More

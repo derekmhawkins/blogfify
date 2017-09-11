@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+  #main
+    .row.spacing.post
+      .container
+        .col-xs-12.col-md-12
+          h1= message
+          h2= error.status
+          pre #{error.stack}

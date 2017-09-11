@@ -1,0 +1,35 @@
+extends layout.pug
+
+block content
+  #main
+    .row.spacing.post
+      .container
+        .col-xs-12.col-md-12
+          form(action='/register' method='post').form-horizontal.login
+            .form-group
+              label.col-sm-2.control-label(for='inputFirstname') First Name
+              .col-sm-10
+                input#inputFirstname.form-control(type='text', placeholder='First Name', name='firstname', required)
+            .form-group
+              label.col-sm-2.control-label(for='inputLastname') Last Name
+              .col-sm-10
+                input#inputLastname.form-control(type='text', placeholder='Last Name', name='lastname', required)
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail') Email
+              .col-sm-10
+                input#inputEmail.form-control(type='email', placeholder='Email', name='email', required)
+            .form-group
+              label.col-sm-2.control-label(for='inputUsername') Username
+              .col-sm-10
+                input#inputUsername.form-control(type='text', placeholder='Username', name='username', required)
+            .form-group
+              label.col-sm-2.control-label(for='inputPassword') Password
+              .col-sm-10
+                input#inputPassword.form-control(type='password', placeholder='Password', name='password', required)
+            .form-group
+              label.col-sm-2.control-label(for='inputPassword2') Confirm Password
+              .col-sm-10
+                input#inputPassword2.form-control(type='password', placeholder='Confirm Password', name='password2', required)
+            .form-group
+              .col-sm-offset-2.col-sm-10
+                button.btn.btn-default(type='submit') Register

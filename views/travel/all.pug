@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  #main
+    .row.spacing.post
+      .container
+        .col-xs-12.col-md-12
+          h2.page-title Travel
+          a.btn.btn-info.pull-right(href='/travel/new') New Post
+          each post in posts
+            h3.post-title #{post.title}
+            h6.post-date #{post.createdAt.toDateString()}
+            img.img.img-responsive.post-image(src='../../uploads/' + post.image)
+            p.post-description
+              | #{post.body}
+            a.btn.btn-sm.btn-info.read-more(href='/travel/' + post.id, role='button') Read More
