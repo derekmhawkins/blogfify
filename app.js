@@ -28,7 +28,7 @@ app.set('view engine', 'pug');
 // use sessions for tracking logins
 app.use(session({
   store: new pgSession({
-    conString: 'postgres://derek:derek@127.0.0.1:5432/blogify_db'
+    conString: 'postgres://jpsidxparluqhw:2fee2e978aecdefe0742ae4b98d0fd4d73d19831951d6044d6eddc2b716b01a8@ec2-54-221-212-208.compute-1.amazonaws.com:5432/d3a0b7f863p2fe'
   }),
   secret: "Welcome to the jungle!",
   resave: false,

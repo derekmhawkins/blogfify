@@ -8,6 +8,7 @@ const app = require('../app');
 const debug = require('debug')('express-apps:server');
 const http = require('http');
 const sequelize = require('../models').sequelize;
+const pg = require('pg');
 
 /**
  * Get port from environment and store in Express.
@@ -26,18 +27,13 @@ const server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-const pg = require('pg');
+const pool = new pg.Pool();
 
 pg.defaults.ssl = true;
-pg.connect(process.env.DATABASE_URL, function(err, client) {
+pool.connect(process.env.DATABASE_URL, function(err, done) {
   if(err) throw err;
   console.log('Connected to postgres! Getting schemas...');
-
-  client
-    .query('SELECT table_schema,table_name FROM information_schema.tables;')
-    .on('row', function(row) {
-      console.log(JSON.stringify(row));
-    });
+  done();
 });
 
 sequelize.sync().then(() => {
