@@ -27,10 +27,9 @@ const server = http.createServer(app);
  */
 
 const pg = require('pg');
-const pool = new pg.Pool()
 
 pg.defaults.ssl = true;
-pool.connect(process.env.DATABASE_URL, function(err, client) {
+pg.connect(process.env.DATABASE_URL, function(err, client) {
   if(err) throw err;
   console.log('Connected to postgres! Getting schemas...');
 
